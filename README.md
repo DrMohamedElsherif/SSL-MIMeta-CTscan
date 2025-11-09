@@ -10,9 +10,7 @@ This repository contains the implementation for the study:
 
 ## 📖 Abstract
 
-Medical image classification often suffers from limited labeled datasets.  
-In this project, we employ **Barlow Twins** self-supervised pre-training on **ResNet-18** to generate transferable representations for medical image classification.  
-Our approach demonstrates **superior performance** compared to ImageNet pre-trained models across two distinct medical domains:
+Medical image classification often suffers from limited labeled datasets. In this project, we employ **Barlow Twins** self-supervised pre-training on **ResNet-18** to generate transferable representations for medical image classification. Our approach demonstrates **superior performance** compared to ImageNet pre-trained models across two distinct medical domains:
 
 - **Liver Tumor CT Scans** (4,935 images, 11 organ classes)  
 - **Colorectal Cancer Histology** (107,180 images, 9 tissue classes)
@@ -56,30 +54,6 @@ Domain-specific Barlow Twins features consistently outperform generic ImageNet f
 - Consistently robust performance under **low-label conditions (0.5%–50%)**
 
 ---
-
-## 🛠️ Installation & Usage
-
-```bash
-git clone https://github.com/DrMohamedElsherif/SSL-MIMeta-CTscan.git
-cd SSL-MIMeta-CTscan
-pip install -r requirements.txt
-```
-
-### 💡 Example Usage
-
-```python
-from models.barlow_twins import BarlowTwins
-
-# Initialize model
-model = BarlowTwins(backbone='resnet18')
-
-# Train on MIMeta dataset
-# Example: surgical fine-tuning (readout head only)
-python train.py --strategy surgical --data_percentage 100
-
-# Full fine-tuning
-python train.py --strategy full --data_percentage 100
-```
 
 ---
 
