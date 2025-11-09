@@ -112,9 +112,8 @@ If you use this work, please cite:
 
 ## 📫 Contact
 
-**Dr. Mohamed Elsherif**  
+**Mohamed Elsherif**  
 📧 [mohamed.elsherif@dkfz-heidelberg.de](mailto:mohamed.elsherif@dkfz-heidelberg.de)  
-🔗 [GitHub Profile](https://github.com/DrMohamedElsherif)
 
 ---
 
